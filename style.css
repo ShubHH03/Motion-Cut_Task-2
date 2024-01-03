@@ -1,0 +1,198 @@
+/* CSS Libraries Used 
+
+*Animate.css by Daniel Eden.
+*FontAwesome 4.7.0
+*Typicons
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet');
+
+body, html {
+  font-family: 'Nunito', sans-serif;
+  background-color: #1d243d;
+  padding: 0;
+  margin: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  margin: 0;
+  top: 130px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgb( 33, 41, 66 );
+  border-radius: 9px;
+  border-top: 10px solid #79a6fe;
+  border-bottom: 10px solid #79a6fe;
+  width: 400px;
+  height: 500px;
+  box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+}
+
+.box h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  color: rgb(178, 200, 186);
+  /* color: #a1a4ad; */
+  letter-spacing: 1.5px;
+  margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin: 20px auto;
+  background: #262e49;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 280px;
+  outline: none;
+  color: #d6d6d6;
+      -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  
+}
+::-webkit-input-placeholder {
+  color: #565f79;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+  border: 1px solid #79A6FE;
+  
+}
+
+a{
+  color: #5c7fda;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.btn1 {
+    appearance: button;
+  background: rgb(178, 200, 186);
+  /* background: #a1a4ad; */
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  /* color: #a1a4ad; */
+  color: black;
+  column-gap: 1rem;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 50px;
+  width: 300px; 
+  height: 50px;
+}
+
+.btn1:active {
+    background-color: rgb(178, 200, 186);
+     color: black;
+    box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+    transform: translateY(0.125rem);
+  }
+  
+
+
+.rmb {
+  position: absolute;
+  margin-left: -24%;
+  margin-top: 0px;
+  color: #dfdeee;
+  font-size: 13px;
+}
+
+.forgetpass {
+    
+  position: relative;
+  float: right;
+  right: 50px;
+}
+
+.dnthave{
+    position: absolute;
+    top: 92%;
+    left: 24%;
+}
+
+.typcn {
+  position: absolute;
+  left: 339px;
+  top: 282px;
+  color: #3b476b;
+  font-size: 22px;
+  cursor: pointer;
+}      
+
+.typcn.active {
+  color: #7f60eb;
+}
+
+.error {
+  background: #ff3333;
+  text-align: center;
+  width: 337px;
+  height: 20px;
+  padding: 2px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  position: absolute;
+  top: 31%;
+  left: 7.2%;
+  color: white;
+  display: none;
+}
+
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 90%;
+        }
+    
+        .box input[type="text"],
+        .box input[type="password"] {
+            width: calc(100% - 60px); /* Adjusted width with margin */
+            margin: 10px auto;
+        }
+        .box h2{
+            margin-top: 100px;
+        }
+        .btn1 {
+            width: calc(100% - 40px); /* Adjusted width with margin */
+            /* margin-top: 20px; */
+        }
+    
+        .dnthave {
+              
+          text-align: right;
+            top: 110%;
+            margin-bottom: 500px;
+        }
+    }

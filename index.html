@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="particles-js">
+  <div class="animated bounceInDown">
+    <div class="container">
+      <span class="error animated tada" id="msg"></span>
+      <form name="form1" class="box" onsubmit="validateForm()">
+        <h1>Registration Form</h1>
+        <input type="text" id="username" name="username" placeholder="Username" autocomplete="off">
+        <input type="text" id="email" name="email" placeholder="Email" autocomplete="off">
+        <i class="typcn typcn-eye" id="eye"></i>
+        <input type="password" id="password" name="password" placeholder="Password" autocomplete="off">
+
+        <div class="input_field checkbox_option">
+          <input type="checkbox" id="cb1">
+          <label for="cb1" style="color: rgb(178, 200, 186);">I agree with terms and conditions</label>
+        </div>
+        <input type="submit" value="SUBMIT" class="btn1">
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
